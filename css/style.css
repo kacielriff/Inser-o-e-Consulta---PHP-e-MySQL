@@ -1,0 +1,100 @@
+/* Variáveis */ 
+
+:root {
+    --main-color: #314d4a;
+    --text-color: #d8dedd;
+    --button-color: #d8dedd;
+}
+
+/* Fontes */
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/* Estilizacao */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Regular, sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+/* Botoes */
+
+.button-container {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--button-color);
+    margin: 10px;
+    padding: 30px 75px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    color: var(--main-color);
+    width: 280px;
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--main-color);
+    color: var(--button-color);
+    transform: translate(-5px, -5px);
+    box-shadow: 6px 6px 2px var(--button-color);
+    border-radius: 10px;
+}
+
+.small {
+    padding: 2px 6px;
+    margin: 4px;
+    font-size: 16px;
+    border-radius: 4px;
+    width: auto;
+}
+
+.small:hover {
+    transform: translate(0,0);
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+/* Paragrafos */
+
+p {
+    width: 600px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.7;
+}
