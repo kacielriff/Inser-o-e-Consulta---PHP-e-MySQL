@@ -111,18 +111,6 @@
         </div>
     </div>
 
-    <script>
-        // Função para preencher os campos do formulário com dados
-        function preencherFormulario() {
-            document.getElementById('nome').value = 'João Silva';
-            document.getElementById('curso').value = 'Engenharia';
-            document.getElementById('cidade').value = 'São Paulo';
-            document.getElementById('idade').value = 25;
-        }
-        
-        // Chamada da função para preencher o formulário
-        preencherFormulario();
-    </script>
 </body>
 
 </html>
